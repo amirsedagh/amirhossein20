@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n, f1 = 1, f2 = 1, fib;
+
+    cout << "Enter the number of terms: ";
+    cin >> n;
+
+    cout << f1 << " " << f2 << " ";
+
+    for (int i = 3; i <= n; i++) {
+        fib = f1 + f2;
+        cout << fib << " ";
+        f1 = f2;
+        f2 = fib;
+    }
+
+    return 0;
+}
